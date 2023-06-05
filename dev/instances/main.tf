@@ -138,3 +138,11 @@ resource "aws_eip" "static_eip" {
     }
   )
 }
+
+resource "aws_ecr_repository" "webapp" {
+  name = "webapp"
+}
+
+resource"aws_ecr_repository" "appdatabase" {
+  name = "appdatabase"
+}
